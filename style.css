@@ -294,16 +294,16 @@ footer {
         font-size: 1rem;
     }
 
-    .nav-links {
-        flex-direction: column;
+       .nav-links {
+        flex-wrap: wrap;   /* keep in a row, allow wrapping */
+        justify-content: center;
         gap: 10px;
         margin-top: 10px;
-        text-align: center;
         width: 100%;
     }
 
     .nav-links li {
-        display: block;
+        display: inline-block; /* keep horizontal */
     }
 
     .service-cards, .team-container {
@@ -320,3 +320,4 @@ footer {
         font-size: 16px;
     }
 }
+
