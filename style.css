@@ -1,6 +1,6 @@
 /* Global Styles */
 html {
-    scroll-behavior: smooth; /* enables smooth scrolling to sections */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,7 +23,7 @@ h1, h2, h3 {
     background: #1d0e07;
     padding: 20px 34px;
     color: #fff;
-    flex-wrap: wrap; /* allow wrapping on small screens */
+    position: relative;
 }
 
 .logo {
@@ -57,6 +57,14 @@ h1, h2, h3 {
 
 .nav-links li a:hover {
     color: #ffffff;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
 }
 
 /* Hero Section */
@@ -283,7 +291,7 @@ footer {
 /* ===== RESPONSIVE FIXES ===== */
 @media (max-width: 768px) {
     .hero-content {
-        padding: 40px 20px; /* reduce padding on mobile */
+        padding: 40px 20px;
     }
 
     .hero h1 {
@@ -294,30 +302,30 @@ footer {
         font-size: 1rem;
     }
 
+    /* Hamburger menu for mobile */
+    .hamburger {
+        display: block;
+    }
+
     .nav-links {
-  display: none; /* hide by default */
-  flex-direction: column;
-  background: #222;
-  position: absolute;
-  top: 60px;
-  right: 10px;
-  width: 200px;
-  padding: 15px;
-  border-radius: 8px;
-}
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;  /* full screen width */
+        background: #222;
+        padding: 20px 0;
+        text-align: center;
+    }
 
-.nav-links.show {
-  display: flex; /* show when ☰ is clicked */
-}
+    .nav-links.show {
+        display: flex;
+    }
 
-.nav-links li {
-  margin: 10px 0;
-}
-
-.hamburger {
-  display: block;
-}
-
+    .nav-links li {
+        margin: 15px 0;
+    }
 
     .service-cards, .team-container {
         flex-direction: column;
@@ -325,7 +333,7 @@ footer {
     }
 
     .card, .team-member {
-        width: 90%; /* full width on mobile */
+        width: 90%;
     }
 
     .btn {
@@ -333,5 +341,3 @@ footer {
         font-size: 16px;
     }
 }
-
-
