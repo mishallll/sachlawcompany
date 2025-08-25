@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const popupTitle = document.getElementById("popupTitle");
   const popupDesc = document.getElementById("popupDesc");
 
-  // ✅ Get all service cards
   const serviceCards = document.querySelectorAll(".card");
 
-  // ✅ Map of detailed descriptions (ordered)
+  // ✅ Service details map
   const serviceDetails = {
     "Corporate Law": `
       <ul>
@@ -59,43 +58,57 @@ document.addEventListener("DOMContentLoaded", () => {
     `
   };
 
-  // ✅ Add click event for each service card
+  // ✅ Open popup on service card click
   serviceCards.forEach(card => {
     card.addEventListener("click", () => {
-      const title = card.getAttribute("data-title");
-      const desc = serviceDetails[title] || "No additional details available.";
-
+      const title = card.dataset.title || card.textContent.trim();
       popupTitle.textContent = title;
-      popupDesc.innerHTML = desc; // ✅ allow HTML lists
-      popup.style.display = "flex"; 
+      popupDesc.innerHTML = serviceDetails[title] || "<p>No additional details available.</p>";
+      popup.style.display = "flex";
     });
   });
 
-  // ✅ Close popup when clicking the X
-  closeBtn.addEventListener("click", () => {
-    popup.style.display = "none";
+  // ✅ Close popup (X button)
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  }
+
+  // ✅ Close popup by clicking outside
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) popup.style.display = "none";
   });
 
-  // ✅ Close popup if user clicks outside the content box
-  window.addEventListener("click", (e) => {
-    if (e.target === popup) {
+  // ✅ Close popup with Esc key
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && popup.style.display === "flex") {
       popup.style.display = "none";
     }
   });
 
-  // ✅ "Consultation" button scrolls to contact section
-  consultBtn.addEventListener("click", () => {
-    popup.style.display = "none";
-    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-  });
+  // ✅ Consultation button scrolls to Contact
+  if (consultBtn) {
+    consultBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    });
+  }
 
-  // ✅ Hamburger menu toggle
+  // ✅ Hamburger toggle
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
 
-  if (hamburger) {
+  if (hamburger && navLinks) {
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("show");
+    });
+
+    // ✅ Close menu when clicking a link (on mobile)
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+      });
     });
   }
 });
