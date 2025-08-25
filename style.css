@@ -119,6 +119,27 @@ h1, h2, h3 {
     background-color: #d9c1c1;
     margin: 40px 0;
 }
+/* General button style */
+.explore-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Mobile specific fix */
+@media (max-width: 768px) {
+  .explore-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    width: auto;          /* prevent full-width */
+    max-width: 200px;     /* limit size */
+    margin: 10px auto;    /* center on mobile */
+    display: block;
+  }
+}
 
 /* Sections */
 .section {
@@ -341,3 +362,4 @@ footer {
         font-size: 16px;
     }
 }
+
