@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const popup = document.getElementById("popup");
   const closeBtn = document.querySelector(".close-btn");
@@ -88,4 +89,14 @@ document.addEventListener("DOMContentLoaded", () => {
     popup.style.display = "none";
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   });
+  document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 });
+
+});
+
