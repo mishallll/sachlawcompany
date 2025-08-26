@@ -9,24 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ✅ Service details map
   const serviceDetails = {
-    "Corporate Law": `
-      <ul>
-        <li>Company Matters & Financial Issues</li>
-        <li>Mergers, Acquisitions & Winding Up</li>
-        <li>Partnerships & Business Registration</li>
-        <li>Trademark Registration</li>
-        <li>Corporate Compliance & Governance</li>
-      </ul>
-    `,
-    "Criminal Law": `
-      <ul>
-        <li>Bail & Trial Matters (Murder, Assault, Kidnapping, Dishonor of Cheque, Theft, Cheating, Public Order Offences)</li>
-        <li>Anti-Terrorism Laws</li>
-        <li>NAB Matters</li>
-        <li>Cyber / Electronic Crimes</li>
-        <li>Hudood Laws</li>
-      </ul>
-    `,
+   
+   
     "Civil Law": `
       <ul>
         <li>Property Matters</li>
@@ -39,6 +23,24 @@ document.addEventListener("DOMContentLoaded", () => {
         <li>Labor & Employment Matters</li>
       </ul>
     `,
+     "Criminal Law": `
+      <ul>
+        <li>Bail & Trial Matters (Murder, Assault, Kidnapping, Dishonor of Cheque, Theft, Cheating, Public Order Offences)</li>
+        <li>Anti-Terrorism Laws</li>
+        <li>NAB Matters</li>
+        <li>Cyber / Electronic Crimes</li>
+        <li>Hudood Laws</li>
+      </ul>
+    `,
+      "Taxation Law": `
+      <ul>
+        <li>Income Tax Matters</li>
+        <li>Sales Tax Matters</li>
+        <li>Property Tax Matters</li>
+        <li>Customs Laws</li>
+        <li>Federal Excise Duty Matters</li>
+      </ul>
+    `,
     "Banking Law": `
       <ul>
         <li>Loan & Debt Recovery Matters</li>
@@ -47,13 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
         <li>Recovery Suits</li>
       </ul>
     `,
-    "Taxation Law": `
+
+    "Corporate Law": `
       <ul>
-        <li>Income Tax Matters</li>
-        <li>Sales Tax Matters</li>
-        <li>Property Tax Matters</li>
-        <li>Customs Laws</li>
-        <li>Federal Excise Duty Matters</li>
+        <li>Company Matters & Financial Issues</li>
+        <li>Mergers, Acquisitions & Winding Up</li>
+        <li>Partnerships & Business Registration</li>
+        <li>Trademark Registration</li>
+        <li>Corporate Compliance & Governance</li>
       </ul>
     `
   };
@@ -112,3 +115,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
