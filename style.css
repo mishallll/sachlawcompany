@@ -20,7 +20,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0a2a43;
+    background: #0a2a43; /* navy */
     padding: 20px 34px;
     color: #fff;
     position: relative;
@@ -56,7 +56,7 @@ h1, h2, h3 {
 }
 
 .nav-links li a:hover {
-    color: #ffffff;
+    color: #f1c40f; /* gold hover */
 }
 
 /* Hamburger */
@@ -101,16 +101,18 @@ h1, h2, h3 {
     padding: 12px 24px;
     font-size: 18px;
     margin-top: 15px;
-    background: #806419;
-    color: #ffffff;
+    background: #A37B2C; /* gold */
+    color: #000; /* black text */
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 12px;
     transition: 0.3s;
     font-weight: bold;
+    border: none;
 }
 
 .btn:hover {
-    background: #0a2a43;
+    background: #C49E3E; /* lighter gold */
+    color: #0a2a43; /* navy text */
 }
 
 .section-divider {
@@ -142,206 +144,4 @@ h1, h2, h3 {
     background: #fefefe;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
-    width: 250px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
-    color: #0a2a43;
-}
-
-/* Modal Popup */
-.popup {
-    display: none;
-    position: fixed;
-    top: 20%; left: 20%;
-    width: 50%;
-    border-radius: 50px;
-    height: 50%;
-    background: #f7f9fd;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 500px;
-    width: 90%;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-.close-btn {
-    float: right;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #0a2a43;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-/* Contact Info */
-.contact-info {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.contact-info p {
-    font-size: 1.2rem;
-    margin: 12px 0;
-}
-
-.contact-info a {
-    color: #0a2a43;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.contact-info a:hover {
-    color: #f1c40f;
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background: #0a2a43;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-
-/* Team Section */
-.team-section {
-    padding: 60px 20px;
-    background: #f8f9fa;
-    text-align: center;
-}
-
-.team-section h2 {
-    font-size: 2rem;
-    color: #0a2a43;
-    margin-bottom: 40px;
-}
-
-.team-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.team-member {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
-    width: 220px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-}
-
-.team-member img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #0a2a43;
-}
-
-.team-member h3 {
-    margin: 10px 0 5px;
-    font-size: 1.1rem;
-    color: #0a2a43;
-    font: serif;
-}
-
-/* ===== RESPONSIVE FIXES ===== */
-@media (max-width: 768px) {
-    .hero-content {
-        padding: 40px 20px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    /* Hamburger menu for mobile */
-    .hamburger {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;  /* full screen width */
-        background: #222;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    .service-cards, .team-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card, .team-member {
-        width: 90%;
-    }
-
-    .btn {
-        width: 100%;
-        font-size: 16px;
-    }
-}
-
-
-
-
+    box-shadow: 0px 4px 6px rgba(0,0,0
