@@ -169,7 +169,7 @@ position: fixed;
     box-shadow: #222;
     justify-content: center;
     align-items: center;
-    
+    PADDING:30PX;
     word-wrap: break-word;
     max-width: 90%;
     max-height: 90%;
@@ -349,6 +349,7 @@ footer {
         font-size: 16px;
     }
 }
+
 
 
 
