@@ -158,7 +158,7 @@ h1, h2, h3 {
 
 /* Modal Popup */
 .popup {
-    display: inline-block;
+    display:none;
 position: fixed;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
@@ -353,6 +353,7 @@ footer {
         margin:10px auto;
     }
 }
+
 
 
 
