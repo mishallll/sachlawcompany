@@ -118,7 +118,7 @@ h1, h2, h3 {
 .section-divider {
     border: none;
     height: 1%;
-    background-color: #d9c1c1;
+    background-color: #3c78ac8b;
     margin: 40px 0;
 }
 
@@ -145,3 +145,4 @@ h1, h2, h3 {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0px 4px 6px rgba(0,0,0
+
