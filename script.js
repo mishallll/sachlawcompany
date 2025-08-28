@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `,
      "Criminal Law": `
       <ul>
-        <li>Bail & Trial Matters (Murder, Assault, Kidnapping, Dishonor of Cheque, Theft, Cheating, Public Order Offences)</li>
+        <li>Bail & Trial Matters </li>
         <li>Anti-Terrorism Laws</li>
         <li>NAB Matters</li>
         <li>Cyber / Electronic Crimes</li>
@@ -115,4 +115,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
 
