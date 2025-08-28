@@ -73,7 +73,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("images/bg.jpg") no-repeat center top;
+    background: url("images/bg3.jpg") no-repeat center top;
     background-size: cover;
     background-attachment: scroll;
 }
@@ -110,7 +110,7 @@ h1, h2, h3 {
 }
 
 .btn:hover {
-    background: #361e14;
+    background: #0a2a43;
 }
 
 .section-divider {
@@ -232,7 +232,7 @@ h1, h2, h3 {
 
 /* Footer */
 footer {
-    background: #1d0e07;
+    background: #0a2a43;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -341,5 +341,6 @@ footer {
         font-size: 16px;
     }
 }
+
 
 
