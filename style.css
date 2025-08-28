@@ -172,7 +172,7 @@ position: fixed;
     align-items: center;
     PADDING:30PX;
     word-wrap: break-word;
-    max-width: 90%;
+    max-width: 95%;
     max-height: 90%;
     box-shadow: 0 0 12PX RGBA(175,216,230,0.55),
      0 0 25PX RGBA(173,216,230,0.25);
@@ -353,6 +353,7 @@ footer {
         margin:10px auto;
     }
 }
+
 
 
 
