@@ -165,7 +165,7 @@ position: fixed;
     width: auto;
     border-radius: 20px;
     height: auto;
-    color: #ADE8F4;
+    color: #000000;
     background: #f9f9f9;
     box-shadow: #222;
     justify-content: center;
@@ -353,6 +353,7 @@ footer {
         margin:10px auto;
     }
 }
+
 
 
 
